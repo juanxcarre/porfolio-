@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Futuro CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--fila de logo + nav-->
+<header class="header">
+    <nav class="menu">
+        <ul>
+            <li><a href="#" class="menu-active" >INICIO</a></li>
+            <li><a href="views/sobre micv.html">SOBRE MI</a></li>
+            <li><a href="views/certificados.html">CERTIFICADOS</a></li>
+            <li><a href="views/proyectos .html">PROYECTOS</a></li>
+            <li><a href="views/contacto.html">CONTACTO</a></li>
+        </ul> 
+    </nav>
+    <div class="icons">
+        <i class='open bx bx-menu-alt-right'></i>
+        <i class='close bx bx-x'></i>
+    </div>
+</header>
+<!-- cierre de fila logo + nav -->
+<main class="main">
+    <section class="hero__home">
+        <div class="hero__be_slider">
+            <img class="imagen" src="../desarrollo web/logos/negro imagen de arriba.png" alt="">  
+        </div>
+        <div class="herramientas-flex">
+            <ul>
+                <ol>
+                    <span><img src="../desarrollo web/logos/logofigma.png" alt="FIGAMA"></span>
+                    <span><img src="../desarrollo web/logos/logoxd.png" alt="ADOBE XD"></span>
+                    <span><img src="../desarrollo web/logos/logo Ai.png" alt="ILLUSTRATOT"></span>
+                    <span><img src="../desarrollo web/logos/logops.png" alt="PHOTOSHOP"></span>
+                    <span><img src="../desarrollo web/logos/logoae.png" alt="AFTER EFFECT"></span>
+                    <span><img src="../desarrollo web/logos/logop.png" alt="PREMIER"></span>
+                    <span><img src="../desarrollo web/logos/logohtml.png" alt="HTML"></span>
+                    <span><img src="../desarrollo web/logos/logocss.png" alt="CSS"></span>
+                </ol>
+            </ul>
+        </div>
+    </section>
+    <section class="texto-flex">
+        <div>
+        <h2>SOBRE MI</h2>
+            <p>
+                Soy un estudiante de Artes Visuales y Productor Audio Visual. 
+                Actualmente enfocado en el Diseño Web,
+                Diseño UX UI, Publicidad,
+                Marketing y Arte Audio Visuales.
+                Mi Objetivo laboral es desempeñarme como Diseñador Grafico / UX UI,
+                ademas con aspiraciones a ser un futuro front end developer.
+            </p>
+        </div>
+    </section>
+    <section class="claseuxui-flex">
+        <div>
+            <h4>PROYECTOS</h4>
+            <h2>UX UI</h2>
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/EPA-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/CIDI-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/BSJ-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/MAS-C.png" alt="">
+        </div>
+    </section>
+    <section class="clasegrafico-flex">
+        <div>
+            <img src="../desarrollo web/proyectos/FOSTER-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/LA-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/RICO-C.png" alt="">
+        </div>
+        <div>
+            <img src="../desarrollo web/proyectos/LA-C.png" alt="">
+        </div>
+        <div>
+            <h4>PROYECTOS</h4>
+            <h2>GRA <br> FICO</h2>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <h4> © - Desarrollado por Juan Cruz Carreño Mendoza</h4>
+    <ul class="lista-flex">
+        <li><img class="imagenfooter" src="../desarrollo web/logos/logo whatsapp.png"></li>
+        <li><a href="https://www.instagram.com/juanx.carre/"><img class="imagenfooter" src="../desarrollo web/logos/logo instagram.png"></a></li>
+        <li><a href="https://www.behance.net/juancrcarreo"><img class="imagenfooter" src="../desarrollo web/logos/logo behanca.png"> </a></li>
+        <li><a href="https://www.linkedin.com/in/juan-cruz-carre%C3%B1o-mendoza/"><img class="imagenfooter" src="../desarrollo web/logos/logo linkedin.png"></a></li>
+    </ul> 
+</footer>    
+<script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            const about = document.querySelector('.hero__about')
+
+            header.classList.toggle('header-scroll', window.scrollY > 0)
+            about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+        })
+    </script>
+</body>
+</html>

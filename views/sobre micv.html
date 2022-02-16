@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Futuro CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html" >INICIO</a></li>
+                <li><a href="#" class="menu-active">SOBRE MI</a></li>
+                <li><a href="../views/certificados.html">CERTIFICADOS</a></li>
+                <li><a href="../views/proyectos .html">PROYECTOS</a></li>
+                <li><a href="../views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class='open bx bx-menu-alt-right'></i>
+            <i class='close bx bx-x'></i>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero__home">
+            <div class="hero__be_slider">
+                <img class="imagen" src="../logos/negro imagen de arriba BLUR.png" alt="">  
+                <h2 class="encabezado-flex"> SOBRE MI </h2>
+            </div>
+            <div class="herramientas-flex">
+                <ul>
+                    <ol>
+                        <span><img src="../logos/logofigma.png" alt="FIGAMA"></span>
+                        <span><img src="../logos/logoxd.png" alt="ADOBE XD"></span>
+                        <span><img src="../logos/logo Ai.png" alt="ILLUSTRATOT"></span>
+                        <span><img src="../logos/logops.png" alt="PHOTOSHOP"></span>
+                        <span><img src="../logos/logoae.png" alt="AFTER EFFECT"></span>
+                        <span><img src="../logos/logop.png" alt="PREMIER"></span>
+                        <span><img src="../logos/logohtml.png" alt="HTML"></span>
+                        <span><img src="../logos/logocss.png" alt="CSS"></span>
+                    </ol>
+                </ul>
+            </div>
+        </section>
+        <section class="cv-flex">
+            <div>
+                <h2>JUAN CRUZ<br>CARREÑO MENDOZA</h2>
+                <p>
+                    Soy un estudiante de Artes Visuales y Productor Audio Visual. 
+                    Actualmente enfocado en el Diseño Web,
+                    Diseño UX UI, Publicidad,
+                    Marketing y Arte Audio Visuales.
+                    Mi Objetivo laboral es desempeñarme como Diseñador Grafico / UX UI,
+                    ademas con aspiraciones a ser un futuro front end developer.
+                </p>
+            </div> 
+            <div>
+                <h2>ESTUDIOS</h2>
+                <P>
+                    2012  2021 UNIVERIDAD NACIONAL DE SAN JUAN 
+                    FACULTAD DE FILOSOFIA HUMANIDAES Y ARTES
+                    Universitario  Licenciatura y Profesorado en Artes Visuales
+                    2020  2021 CODERHOUSE
+                    - DISEÑO UX /UI 
+                    - DISEÑO UX /UI AVANZADO
+                    2006  2007 ISRI Carreras y Programas 
+                    Internacionales 
+                    Terciario  tecnicatura en Arte Digital I
+                    Diseño Grafico, Illustrator, Photoshop, Coreldraw
+                    Diseño de Páginas Web 
+                </P>
+            </div> 
+            <div>
+                <h2>EXPERIENCIA</h2>
+                <P>
+                    2021 - Tutor Coderhouse
+                    Tutor en el instituto CoderHouse en curso Ilustrator & Photoshop 
+                </P>
+                <br>
+                <P> 
+                    - 2021 - Foster Viajes - Freelance 
+                    Creacion de piezas graficas 
+                    Publicidad para redes sociales
+                </P>
+                <br>
+                <P>    
+                    - 2021 - Lo Artesanal - Pastas de Autor - Freelance 
+                    Creacion de branding y piezas graficas
+                    Publicidad para redes sociales
+                    Social Media
+                </P>
+                <br>
+                <P>   
+                    - 2021 - Rico Paladar - Lomoteca - Freelance 
+                    Creacion de branding y piezas graficas
+                    Publicidad para redes sociales
+                    Social Media 
+                </P>
+                <br>
+                <P>
+                    - 2020 - Wecall
+                    Operador telefónico 
+                    Vendedor telefónico de Wecall-Peru
+                    Trabajo remoto
+                </P>
+                <br>
+                <P>
+                    - 2019 - 2018  UNSJ  F.F.H.A. Departamento de Artes Visuales 
+                </p>
+                <p> 
+                    - TUTOR AYUDANTE ADSCRIPTO
+                    Alumno Adscripto en la carrera OPTATIVA I Y OPTATIVA II: 
+                    Taller de Cerámica, de la carrera de Artes Visuales. Taller Generación de Formas Orgánicas. 
+                    Concurriendo como colaborador del taller organizado por las Sociedad de Arquitectos de San Juan 
+                    y el Instituto de teoría, Historia y Critica de la FAUD 
+                </P>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <h4> © - Desarrollado por Juan Cruz Carreño Mendoza</h4>
+        <ul class="lista-flex">
+            <li><img class="imagenfooter" src="../logos/logo whatsapp.png"></li>
+            <li><a href="https://www.instagram.com/juanx.carre/"><img class="imagenfooter" src="../logos/logo instagram.png"></a></li>
+            <li><a href="https://www.behance.net/juancrcarreo"><img class="imagenfooter" src="../logos/logo behanca.png"> </a></li>
+            <li><a href="https://www.linkedin.com/in/juan-cruz-carre%C3%B1o-mendoza/"><img class="imagenfooter" src="../logos/logo linkedin.png"></a></li>
+        </ul> 
+    </footer>     
+    <script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            const about = document.querySelector('.hero__about')
+            header.classList.toggle('header-scroll', window.scrollY > 0)
+            about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+            
+        })
+    </script>      
+    
+</body>
+</html>

@@ -1,0 +1,686 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+* {
+    margin: 0%;
+}
+/* header */
+.header {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+.header nav ul li{
+    font-family: Roboto;
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+/* header menu */
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: inline;    
+    list-style-type: none;
+    line-height: 80px;
+    border-left: 2px solid #fff3;
+    transition: 0.4s;
+}
+.menu li:first-child {
+    border-left: none;
+}
+.menu li a {
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+}
+.menu li a.menu-active::after,
+.menu li a:hover::after {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 20%;
+}
+/* header - menu - scrol */
+.header-scroll {
+    background: rgba(0, 0, 0, 0.533);
+    height: 60px;
+    border-bottom: 1px solid #fff;
+}
+.header-scroll li {
+    line-height: 60px;
+    border-color: #0008;
+}
+.header-scroll li a {
+    color: rgb(255, 255, 255);
+}
+.lista-flex {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: start baseline;
+}
+/* footer */
+.footer {
+    background-color: black;
+    text-decoration-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 40px;
+}
+.footer ul {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.footer ul li a {
+    text-decoration-color: none;
+    color: white;
+}
+.footer h4{
+    color: white;
+}
+
+.imagenfooter {
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+}
+/* main */
+.main {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 90%, rgba(54,53,53,1) 100%);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+/* proyectos ux ui */
+.claseuxui-flex {
+    display: flex;
+    background: rgb(51,51,51);
+    background: linear-gradient(270deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 400px; 
+    text-align: center;
+    line-height: 30px;
+}
+.claseuxui-flex div {
+    width: 20%;
+    padding: 10px;
+    align-items: center;
+}
+.claseuxui-flex h4 {
+    font-size: 20px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+.claseuxui-flex h2 {
+    font-size: 130px;
+    line-height: 120px;
+    color: #FFFFFF;
+}
+.claseuxui-flex img {
+    width: 262.1px;
+    height: 225px;
+}
+/* proyectos grafico */
+.clasegrafico-flex {
+    display: flex;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    width: 100%;
+    height: 400px; 
+    text-align: center;
+    line-height: 30px;
+}
+.clasegrafico-flex div {
+    width: 20%;
+    padding: 10px;
+    align-items: center;
+}
+.clasegrafico-flex h4 {
+    font-size: 20px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+.clasegrafico-flex h2 {
+    display: flex;
+    font-size: 90px;
+    line-height: 100px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.clasegrafico-flex img {
+    width: 262px;
+    height: 225px;
+}
+/* lista herramientas */
+.herramientas-flex {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -80px;
+}
+.herramientas-flex img {
+    width: 150px;
+    height: 150px;
+    
+}
+/* TEXTO SOBRE MI  */
+.cv-flex {
+    display: flex;
+    width: 50%px;
+    height: auto;
+    padding: 70px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.cv-flex h2 {
+    display: flex;
+    width: 50%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.cv-flex p {
+    display: flex;
+    width: 800px;
+    height: auto;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+/* TEXTO  */
+.texto-flex {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: 70px;
+    align-items: center;
+}
+.texto-flex h2 {
+    display: flex;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    
+}
+.texto-flex p {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    
+}
+/* TEXTO ENCABEZADO  */
+.encabezado-flex {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px whitesmoke;
+    margin-top: -150px;
+}
+/*  galeria - proyectos y certificados */
+.galeria-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100px 250px;
+    padding: 30px;
+    grid-gap: 30px;
+}
+.galeria-proyectos div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.galeria-proyectos div h2 {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+/* imagenes  */
+.imagen-flex {
+    display: flex;
+    background-image: none;
+    padding: 50%;
+}
+.imagen {
+    width: 100%;
+    height: 400px;
+}
+.imagenlogo {
+    padding: 0%;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(0px 0px 12px black);
+}
+/* formulario contacto */
+.form-flex {
+    width: 750px;
+    height: auto;
+    background: rgb(0 0 0 / 0%);
+    border-radius: 20px;
+    padding: 40px 14px 48px 33px;;
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.form-flex input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+.form-flex textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+#boton:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+.icons {
+    display: none;
+    font-size: 28px;
+    color: rgb(250, 253, 255);
+    cursor: pointer;
+}
+.close {
+    display:list-item!important;
+    
+}
+
+@media screen and (max-width: 810px) {
+/* headre - menu  */
+        .header{
+            justify-content: left;
+        }
+        .menu {
+            display: none;
+        }
+        .icons {
+            display: block;
+            font-size: 50px;
+            margin-left: 30px;
+        }
+        .header nav {
+            display: block;
+        }
+        .menu {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.959);
+            width: 50%;
+            margin-top: 60px;
+            border-radius: 10px;
+        }
+        .menu ul {
+            flex-direction: column; 
+            
+        }
+        .menu li {
+            border-top: white;
+
+        }
+/* logo herramientas */
+        
+        .herramientas-flex {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: -30px;
+        }
+        .herramientas-flex img {
+            width: 80px;
+            height: 80px;
+            
+        }
+/*  imagen encabezado sin blu */
+        .imagen {
+            width: 100%;
+            height: 100%;
+        }
+/* Ttexto index  */
+        .texto-flex {
+            display: flex;
+            width: 95%;
+            height: 100%;
+            margin: 10px;
+            align-items: center;
+        
+        }
+        .texto-flex h2 {
+            display: flex;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            
+        }
+        .texto-flex p {
+            display: flex;
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+/* proyectos ux */
+        .claseuxui-flex {
+            flex-direction: column;
+            background: rgb(51,51,51);
+            background: linear-gradient(270deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+            width: 100%;
+            height: auto; 
+            text-align: center;
+            line-height: 30px;
+        }
+        .claseuxui-flex div {
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+        }
+        .claseuxui-flex h4 {
+            font-size: 20px;
+            line-height: 43px;
+            color: #FFFFFF;
+        }
+        .claseuxui-flex h2 {
+            font-size: 130px;
+            line-height: 120px;
+            color: #FFFFFF;
+        }
+        .claseuxui-flex img {
+            width: 262px;
+            height: 225px;
+        }
+/* proyectos grafico */
+        .clasegrafico-flex {
+            flex-direction: column-reverse;
+            background: rgb(0,0,0);
+            background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+            width: 100%;
+            height: auto; 
+            text-align: center;
+            line-height: 30px;
+        }
+        .clasegrafico-flex div {
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+        }
+        .clasegrafico-flex h4 {
+            font-size: 20px;
+            line-height: 43px;
+            color: #FFFFFF;
+        }
+        .clasegrafico-flex h2 {
+            font-size: 130px;
+            line-height: 120px;
+            color: #FFFFFF;
+            justify-content: center;
+        }
+        .clasegrafico-flex img {
+            width: 262px;
+            height: 225px;
+        }
+/*  footer */
+        .footer {
+                background-color: black;
+                text-decoration-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0% 40px;
+            }
+        .footer ul {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+            }
+        .footer ul li a {
+                text-decoration-color: none;
+                color: white;
+            }
+        .footer h4{
+                color: white;
+                font-size: 20px;
+            }
+        .imagenfooter {
+                padding: 20px;
+                width: 50px;
+                height: 50px;
+            }
+/* encabezado  */
+        .encabezado-flex {
+                display: flex;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 0 0 8px rgba(245, 245, 245, 0);
+                margin-top: -100;
+            }
+/* certificados - proyectos */
+        .galeria-proyectos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-flow: 100px 250px;
+            padding: 20px;
+            grid-gap: 20px;
+        }
+        .galeria-proyectos div img {
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;   
+        }
+        .galeria-proyectos div h2 {
+            display: grid;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            background: rgb(0, 0, 0);
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+/* formulario  */
+        .form-flex {
+            width: 350px;
+            height: auto;
+            background: rgb(0 0 0 / 0%);
+            border-radius: 20px;
+            padding: 40px 14px 48px 33px;
+            box-sizing: border-box;
+            margin: auto;
+            font-size: 20px;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .form-flex input {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 18px;
+            box-sizing: border-box;
+            font-size: 20px;
+            border-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+        }
+        .form-flex textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 20px;
+            border-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+        .form-flex label {
+            font-size: 15px;
+        }
+}
+
+@media screen and (max-width: 1215px) {
+
+/* SOBRE  MI  */
+        .cv-flex {
+                display: flex;
+                width: auto;
+                height: auto;
+                padding: 20px;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        .cv-flex h2 {
+                display: flex;
+            width: 100%;
+            font-size: 30px;
+            margin: 10px 0;
+            color: rgb(255, 255, 255);
+            }
+        .cv-flex p {
+                display: flex;
+                width: auto;
+                height: auto;
+                font-size: 30px;
+                color: rgb(255, 255, 255);
+            }
+/* IMAGEN ENCABEZADO BLU */
+    .imagen {
+                width: 100%;
+                height: 100%;
+            }
+/* PROYECTO UX */
+            .claseuxui-flex {
+                flex-direction: column;
+                background: rgb(51,51,51);
+                background: linear-gradient(270deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+                width: 100%;
+                height: auto; 
+                text-align: center;
+                line-height: 30px;
+            }
+            .claseuxui-flex div {
+                width: 100%;
+                padding: 10px;
+                align-items: center;
+            }
+            .claseuxui-flex h4 {
+                font-size: 20px;
+                line-height: 43px;
+                color: #FFFFFF;
+            }
+            .claseuxui-flex h2 {
+                font-size: 130px;
+                line-height: 120px;
+                color: #FFFFFF;
+            }
+            .claseuxui-flex img {
+                width: 462px;
+                height: 425px;
+            }
+/* PROYECTO GRAFICO */
+            .clasegrafico-flex {
+                flex-direction: column-reverse;
+                background: rgb(0,0,0);
+                background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+                width: 100%;
+                height: auto; 
+                text-align: center;
+                line-height: 30px;
+            }
+            .clasegrafico-flex div {
+                width: 100%;
+                padding: 10px;
+                align-items: center;
+            }
+            .clasegrafico-flex h4 {
+                font-size: 20px;
+                line-height: 43px;
+                color: #FFFFFF;
+            }
+            .clasegrafico-flex h2 {
+                font-size: 130px;
+                line-height: 120px;
+                color: #FFFFFF;
+                justify-content: center;
+            }
+            .clasegrafico-flex img {
+                width: 462px;
+                height: 425px;
+            }
+/* ENCABEZADO  */
+            .encabezado-flex {
+                display: flex;
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 0 0 8px rgba(245, 245, 245, 0);
+                margin-top: -100;
+            }
+}
