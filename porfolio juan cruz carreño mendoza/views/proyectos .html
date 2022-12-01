@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profolio UX UI Desing - Juan Cruz Carreño Mendoza</title>
+    <!--Aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../media.css">
+</head>
+<body>
+    <!--fila de logo + nav-->
+<header class="header">
+    <img class="burger" src="../imagenes/icono burger.png" alt="">
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html" >INICIO</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="certificados .html">CERTIFICADOS</a></li>
+            <li><a href="#" class="menu-active">PROYECTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- cierre de fila logo + nav -->
+<main>
+    <section class="proyectosgrid">
+        <div class="container" data-aos="fade-right">
+            <div class="contenido">
+                <h3>Proyecto</h3>
+                <p>     
+                    descrición del proyecto brebe, diseño de app para buscar estacionamiento privado 
+                    en entidades privadas (playas de estacionamiento )
+                </p>
+                <a href="https://www.behance.net/gallery/124324357/EPA-app-Diseno-UX-UI">Ver más</a>
+            </div>
+            <img src="../imagenes/celu epa.png" alt="proyecto">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <div class="contenido">
+                <h3>Proyecto</h3>
+                <p>     
+                    descrición del proyecto brebe, diseño de app para buscar estacionamiento privado 
+                    en entidades privadas (playas de estacionamiento )
+                </p>
+                <a href="https://www.behance.net/gallery/124324357/EPA-app-Diseno-UX-UI">Ver más</a>
+            </div>
+            <img src="../imagenes/celu epa.png" alt="proyecto">
+        </div>
+        <div class="container" data-aos="fade-right">
+            <div class="contenido">
+                <h3>Proyecto</h3>
+                <p>     
+                    descrición del proyecto brebe, diseño de app para buscar estacionamiento privado 
+                    en entidades privadas (playas de estacionamiento )
+                </p>
+                <a href="https://www.behance.net/gallery/124324357/EPA-app-Diseno-UX-UI">Ver más</a>
+            </div>
+            <img src="../imagenes/celu epa.png" alt="proyecto">
+        </div>
+        <div class="container" data-aos="fade-left">
+            <div class="contenido">
+                <h3>Proyecto</h3>
+                <p>     
+                    descrición del proyecto brebe, diseño de app para buscar estacionamiento privado 
+                    en entidades privadas (playas de estacionamiento )
+                </p>
+                <a href="https://www.behance.net/gallery/124324357/EPA-app-Diseno-UX-UI">Ver más</a>
+            </div>
+            <img src="../imagenes/celu epa.png" alt="proyecto">
+        </div>
+        <div class="container" data-aos="fade-right">
+            <div class="contenido">
+                <h3>Proyecto</h3>
+                <p>     
+                    descrición del proyecto brebe, diseño de app para buscar estacionamiento privado 
+                    en entidades privadas (playas de estacionamiento )
+                </p>
+                <a href="https://www.behance.net/gallery/124324357/EPA-app-Diseno-UX-UI">Ver más</a>
+            </div>
+            <img src="../imagenes/celu epa.png" alt="proyecto">
+        </div>
+    </section>
+</main>
+<footer class="footer" id="footer">
+    <h4> © - Desarrollado por Juan Cruz Carreño Mendoza</h4>
+    <ul class="footer">
+        <li><a href="https://www.behance.net/juancrcarreo"><img class="imagenfooter" src="../imagenes/logo behanca.png"> </a></li>
+        <li><a href="https://www.linkedin.com/in/juan-cruz-carre%C3%B1o-mendoza/"><img class="imagenfooter" src="../imagenes/logo linkedin.png"></a></li>
+    </ul> 
+</footer>
+    <script src="../js/main.js"></script>
+    <script>
+        // Efecto scroll - Header
+        window.addEventListener('scroll', () => {
+        const header = document.querySelector('header')
+        const about = document.querySelector('.hero__about')
+        header.classList.toggle('header-scroll', window.scrollY > 0)
+        about.classList.toggle('hero__about-scroll', window.scrollY > 100)
+                    })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
